@@ -55,7 +55,7 @@ def render_card(name_lo: str, name_en: str, icon: str, checks: list[dict], logo_
         <div>
             <div class="card-top">
                 <div class="card-title-group">
-                    <div class="card-icon">{"<img src='data:image/png;base64," + logo_b64 + "' />" if logo_b64 else icon}</div>
+                    <div class="card-icon{' card-icon-logo' if logo_b64 else ''}" style="{'background-image:url(data:image/png;base64,' + logo_b64 + ');background-size:contain;background-repeat:no-repeat;background-position:center;' if logo_b64 else ''}">{"" if logo_b64 else icon}</div>
                     <div>
                         <div class="system-name">{name_lo}</div>
                         <div class="system-name-en">{name_en}</div>

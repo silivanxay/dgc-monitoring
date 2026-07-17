@@ -143,13 +143,12 @@ def inject_styles() -> None:
             overflow: hidden;
         }
 
-        .card-icon img {
-            width: 100%; height: 100%;
-            object-fit: cover;
-            border-radius: 10px;
+        .card-icon-logo {
+            background: white;
         }
 
-        .card-title-group {
+
+.card-title-group {
             display: flex;
             align-items: center;
             flex: 1;

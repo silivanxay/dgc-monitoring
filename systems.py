@@ -1,4 +1,4 @@
-from assets import EOFFICE_B64, GCHAT_B64, GDRIVE_B64
+from assets import EOFFICE_B64, GCHAT_B64, GDRIVE_B64, EMAIL_B64, EVC_B64, LAOPORTAL_B64, LAOPEDIA_B64, GDX_B64
 
 SYSTEMS = [
     {
@@ -35,15 +35,17 @@ SYSTEMS = [
         "name_lo": "ລະບົບ E-Mail",
         "name_en": "E-Mail (@mtc.gov.la)",
         "icon": "✉️",
+        "logo": EMAIL_B64,
         "checks": [
-            {"label": "Mail Portal", "url": "https://mail.gov.la"},
-            {"label": "M365 Cloud",  "url": "https://m365.cloud.microsoft"},
+            {"label": "Mail 365", "url": "https://mail.gov.la"},
+            {"label": "iRedMail",  "url": "https://email.gov.la/proxy/"},
         ],
     },
     {
         "name_lo": "ລະບົບກອງປະຊຸມທາງໄກ",
         "name_en": "EVC (Video Conferencing)",
         "icon": "📹",
+        "logo": EVC_B64,
         "checks": [
             {"label": "Server",  "url": "https://evc.gov.la"},
         ],
@@ -58,19 +60,12 @@ SYSTEMS = [
         ],
     },
     {
-        "name_lo": "ລະບົບ QR Code",
-        "name_en": "QR Code Generator",
+        "name_lo": "ລະບົບ QR Code & vCard",
+        "name_en": "QR Code & vCard",
         "icon": "▦",
         "checks": [
-            {"label": "Service", "url": "http://103.1.235.56/genqr/"},
-        ],
-    },
-    {
-        "name_lo": "ລະບົບ vCard",
-        "name_en": "vCard",
-        "icon": "👤",
-        "checks": [
-            {"label": "Service", "url": "http://103.1.235.56/vcard/"},
+            {"label": "QR Code", "url": "http://103.1.235.56/genqr/"},
+            {"label": "vCard", "url": "http://103.1.235.56/vcard/"},
         ],
     },
     {
@@ -79,6 +74,43 @@ SYSTEMS = [
         "icon": "🗳️",
         "checks": [
             {"label": "Service", "url": "https://e-vote.gov.la/public/"},
+        ],
+    },
+    {
+        "name_lo": "ລະບົບ Lao Portal",
+        "name_en": "Lao Portal",
+        "icon": "🌏",
+        "logo": LAOPORTAL_B64,
+        "checks": [
+            {"label": "Server", "url": "https://laoportal.gov.la/"},
+        ],
+    },
+    {
+        "name_lo": "ລະບົບ GDX",
+        "name_en": "GDX",
+        "icon": "🔗",
+        "logo": GDX_B64,
+        "checks": [
+            {"label": "Server",    "url": "https://ndx.gov.la/"},
+            {"label": "Admin",     "url": "https://admin.ndx.gov.la/login"},
+            {"label": "Admin TSA", "url": "https://admin-tsa.ndx.gov.la/"},
+        ],
+    },
+    {
+        "name_lo": "ລະບົບ Laopedia",
+        "name_en": "Laopedia",
+        "icon": "📖",
+        "logo": LAOPEDIA_B64,
+        "checks": [
+            {"label": "Server", "url": "https://laopedia.gov.la/"},
+        ],
+    },
+    {
+        "name_lo": "ລະບົບ G-HelpDesk",
+        "name_en": "G-HelpDesk",
+        "icon": "📞",
+        "checks": [
+            {"label": "Server", "url": "https://g-care.eoffice.la/"},
         ],
     },
 ]
